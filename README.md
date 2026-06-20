@@ -16,11 +16,17 @@ behaviour. Sibling to
 
 ## What's in this repo
 
-- `etc/xdg/kwinrulesrc` — the shipped KWin window rules, as a system-wide XDG
-  default (read beneath each user's `~/.config/kwinrulesrc`, so it applies to every
-  user, is never overwritten, and uninstalls cleanly).
-  **Currently a scaffold** — no rules captured yet. Set up the rules in
-  *System Settings → Window Management → Window Rules*, then they get captured here.
+- `etc/xdg/kwinrc` — the KWin window-management defaults, shipped as a system-wide
+  XDG cascade default (read beneath each user's `~/.config/kwinrc`, so it applies to
+  every user, is never overwritten, and uninstalls cleanly). Minimal — only the
+  intentional keys:
+  - **4 virtual desktops**, 2 rows
+  - **Desktop effects on**: cube, slide-back, wobbly windows (+ wobbly tuning)
+  - **Titlebar mouse-wheel → Maximize/Restore**
+  - **Alt-Tab switcher = Flipswitch**
+  - Bottom-left screen edge → Show Desktop
+- **Window rules** (`kwinrulesrc`) are in scope for this package but none are shipped
+  yet — they'll be added here when defined.
 - `setup.sh`, `up.sh` — standard Kiro bash scaffold (git identity + sync).
 
 ## Installation
