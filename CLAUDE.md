@@ -1,9 +1,10 @@
-# CLAUDE.md — kiro-plasma-kwin-rules
+# CLAUDE.md — kiro-plasma-window-management
 
 ## Project overview
 
-See [README.md](./README.md). Ships the default **KWin window rules**
-(`kwinrulesrc`) for Kiro's Plasma edition.
+See [README.md](./README.md). Ships the default **KWin window-management**
+configuration for Kiro's Plasma edition — currently the window rules
+(`kwinrulesrc`), with room to grow into broader KWin window behaviour.
 
 ## Current state
 

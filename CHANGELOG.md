@@ -3,8 +3,10 @@
 ## 2026.06.20
 
 ### What Changed
-- Initial repo created in the Kiro ecosystem: default KWin window rules for the
-  Plasma edition.
+- Initial repo created in the Kiro ecosystem: default KWin window-management config
+  for the Plasma edition (currently window rules).
+- Renamed `kiro-plasma-kwin-rules` → `kiro-plasma-window-management` (broader scope;
+  GitHub repo, local dir, recipe, and ECOSYSTEM entry all updated).
 - Standard markdown scaffold added (`README.md`, `CHANGELOG.md`, `CLAUDE.md`).
 - Canonical bash scaffold copied in (`up.sh`, `setup.sh`) plus `LICENSE`, `kiro.jpg`,
   `.gitignore`.

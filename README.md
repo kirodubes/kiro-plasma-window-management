@@ -2,11 +2,12 @@
   <img src="kiro.jpg" alt="Kiro" width="220" />
 </p>
 
-# kiro-plasma-kwin-rules
+# kiro-plasma-window-management
 
-Default **KWin window rules** for Kiro's Plasma edition — per-application window
-behaviour (size, position, desktop, floating/maximised state, no-border, etc.)
-applied out of the box. Sibling to
+Default **KWin window-management** configuration for Kiro's Plasma edition —
+per-application **window rules** (size, position, desktop, floating/maximised state,
+no-border, etc.) applied out of the box, with room to grow into broader KWin window
+behaviour. Sibling to
 [kiro-plasma-system-settings](https://github.com/kirodubes/kiro-plasma-system-settings),
 [kiro-plasma-konsole](https://github.com/kirodubes/kiro-plasma-konsole),
 [kiro-plasma-dolphin](https://github.com/kirodubes/kiro-plasma-dolphin),
@@ -34,14 +35,14 @@ Server = https://erikdubois.github.io/$repo/$arch
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S kiro-plasma-kwin-rules
+sudo pacman -S kiro-plasma-window-management
 ```
 
 ### Manual
 
 ```bash
-git clone https://github.com/kirodubes/kiro-plasma-kwin-rules.git
-cd kiro-plasma-kwin-rules
+git clone https://github.com/kirodubes/kiro-plasma-window-management.git
+cd kiro-plasma-window-management
 sudo cp -rT etc /etc
 ```
 
