@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026.06.21
+
+### What Changed
+- Fixed the lost 4th virtual desktop. The `[Desktops] Id_*` keys had been dropped
+  from `etc/xdg/kwinrc` as "machine-specific", but KWin reconciles the virtual
+  desktop count by the `Id_N` entries (not `Number` alone), so it collapsed the
+  4th desktop on login.
+
+### Technical Details
+- Re-added `Id_1`…`Id_4` to the `[Desktops]` block using portable, non-machine-specific
+  strings (`Desktop-1`…`Desktop-4`) rather than the original captured UUIDs — keeps the
+  config portable while making `Number=4` stick.
+
+### Files Modified
+- `etc/xdg/kwinrc`
+- `CLAUDE.md` (corrected the "Id_* dropped" note)
+
 ## 2026.06.20
 
 ### What Changed

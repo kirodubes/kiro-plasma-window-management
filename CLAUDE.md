@@ -15,8 +15,11 @@ effects on (cube / slide-back / wobbly + tuning), titlebar-wheel → Maximize/Re
 Flipswitch alt-tab, bottom-left edge → Show Desktop. **This package is the single
 owner of `kwinrc`** — the `[ElectricBorders]` key was moved here out of
 `kiro-plasma-system-settings` (2026-06-20) to avoid two packages owning
-`/etc/xdg/kwinrc`. Dropped from the capture: machine-specific `[Desktops] Id_*`
-UUIDs and all `[Tiling][uuid]` blocks (not portable). Window rules (`kwinrulesrc`)
+`/etc/xdg/kwinrc`. Dropped from the capture: machine-specific `[Tiling][uuid]` blocks (not
+portable). The `[Desktops] Id_*` keys were initially dropped too, but that
+caused KWin to collapse the 4th virtual desktop on login — KWin reconciles the
+desktop count by the `Id_N` entries, not `Number` alone. Re-added (2026-06-21)
+as portable, non-machine-specific strings (`Desktop-1`…`Desktop-4`). Window rules (`kwinrulesrc`)
 are in scope but none defined yet.
 
 ## Patterns & decisions
